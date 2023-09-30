@@ -1,0 +1,65 @@
+/* Date range picker container */
+.date-range-picker {
+    position: relative;
+    font-family: Arial, sans-serif;
+    width: 250px;
+}
+
+/* Date input field */
+.date-range-picker input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Date picker container */
+.date-picker-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Date picker header */
+.date-picker-header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Date picker days */
+.date-picker-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+}
+
+/* Date picker day */
+.date-picker-day {
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Date picker day: hover */
+.date-picker-day:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Date picker day: selected */
+.date-picker-day.selected {
+    background-color: #007bff;
+    color: #fff;
+}
